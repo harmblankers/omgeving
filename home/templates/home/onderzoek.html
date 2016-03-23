@@ -1,0 +1,59 @@
+{% load staticfiles %}
+
+{% block content %}
+<html>
+
+<head>
+  <title>REQON Security onderzoek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+
+</head>
+
+
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href={% url 'home' %}>REQON Security</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+           <li class="navbar-harm activef"><a href={% url 'home' %}>TERUG</a></li>
+          <li class="active" ><a href="">ONDERZOEK</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div id="Onderzoek" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <br><br><br>
+      <span class="glyphicon glyphicon-search kleurlogo" style="margin-left: 100px;"></span>
+    </div>
+    <div class="col-sm-8">
+      <br>
+      <h2>&nbsp;Onderzoek</h2>
+        <br>
+      <h4> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+      <h4> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+    </div>
+  </div>
+</div>
+
+
+
+</html>
+
+{% endblock %}

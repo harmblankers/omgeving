@@ -1,0 +1,44 @@
+{% load staticfiles %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+
+<head>
+
+  <title>404 Page not found</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+</head>
+
+
+<body>
+
+
+<div class="jumbotron text-center">
+  <h1>REQON Security</h1>
+  <h3>Helaas de pagina die u aangevraagd heeft bestaat niet op onze server.</h3>
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href={% url 'home' %}>REQON Security</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+           <li class="navbar-harm activef"><a href={% url 'home' %}>TERUG</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+</body>
+
+{% endblock %}
